@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.bg{
+			width: 800px;
+			height: 600px;
+			margin: 0 auto;
+		}
+		.canvasbox{
+			position: relative;
+			width: 800px;
+			height: 600px;
+		}
+		canvas{
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		#canvas1{
+			z-index: 1;
+		}
+		#canvas2{
+			z-index: 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="bg">
+		<div class="canvasbox">
+			<canvas id="canvas1" width="800" height="600"></canvas>
+			<canvas id="canvas2" width="800" height="600"></canvas>
+		</div>
+	</div>
+
+
+	<script src="js/index.js"></script>
+</body>
+</html>
